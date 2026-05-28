@@ -1,0 +1,430 @@
+.tariffs{
+    padding: 0px 60px 0px 60px;
+    margin-bottom: 120px;
+
+    .tariffsInner{
+
+        & > h1{
+            font-size: 45px;
+            letter-spacing: 1%;
+            line-height: 100%;
+            margin-bottom: 70px;
+        }
+
+        .tariffs_cards{
+            display: flex;
+            justify-content: space-between;
+            height: 514px;
+
+            .card_beginner{
+                box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                width: 421px;
+
+                .cardBeginner_title{
+                    display: flex;
+                    align-items: center;
+                    padding: 11px 15px 34px 30px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: rgba(255, 182, 79, 1);
+
+                    .cardBeginnerTitle_text{
+                        & > h2{
+                            font-size: 30px;
+                            font-weight: 500;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            margin-bottom: 10px;
+                        }
+
+                        & > p {
+                            font-size: 18px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                        }
+
+                    }
+
+                }
+
+                .cardBeginner_info{
+                    padding: 15px 10px 27px 30px;
+                    border:  2px rgba(255, 182, 79, 1) solid;
+                    border-radius: 5px;
+
+                    .currentTariff{
+                        text-align: end;
+
+                        & > p {
+                            display: inline-flex;
+                            border-radius: 10px;
+                            font-size: 14px;
+                            background-color: rgba(59, 165, 224, 1);
+                            color: #fff;
+                            padding: 4px 13px;
+                        }
+
+                    }
+                    
+                    .cardBeginnerInfo_price{
+                        margin-bottom: 50px;
+
+                        & > h2{
+                            display: flex;
+                            align-items: center;
+                            font-size: 30px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            margin-bottom: 10px;
+                            & > span{
+                                text-decoration: line-through;
+                                font-size: 25px;
+                                margin-left: 20px;
+                                color: #808080;
+                            }
+                        }
+
+                        & > p{
+                            font-size: 18px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                        }
+
+                    }
+
+                    .cardInfo_checkMarks{
+
+                        & > h2{
+                            font-size: 20px;
+                            font-weight: 500;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            margin-bottom: 10px;
+                        }
+
+                        .mark_line{
+                            display: flex;
+                            margin-bottom: 5px;
+
+                            & > p{
+                                font-size: 18px;
+                                letter-spacing: 1%;
+                                line-height: 100%;
+                                margin-left: 10px;
+                            }
+
+                        }
+                    }
+
+                    .cardInfo_button{ 
+                        margin-top: 50px;
+
+                        & > button{
+                            font-size: 20px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            background-color: rgba(210, 210, 210, 1);
+                            border: 2px #ffffff00 solid;
+                            border-radius: 5px;
+                            width: 94%;
+                            padding: 18px 0px 18px 0px;
+                            cursor: pointer;
+
+                            &:hover{
+                                background-color: #fff;
+                                border: 2px rgba(210, 210, 210, 1) solid;
+                            }
+                        }
+
+                        .notAuthUserButton{
+                            display: none;
+                            font-size: 20px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            background-color: rgba(89, 112, 255, 1);
+                            color: #fff;
+                            border: 2px #ffffff00 solid;
+                            border-radius: 5px;
+                            width: 94%;
+                            padding: 18px 0px 18px 0px;
+                            cursor: pointer;
+    
+                            &:hover{
+                                background-color: #fff;
+                                color: rgba(89, 112, 255, 1);
+                                border: 2px rgba(89, 112, 255, 1) solid;
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .card_pro{
+                box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                width: 421px;
+
+                .cardPro_title{
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 0px 0px 30px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: rgba(124, 227, 225, 1);
+
+                    .cardProTitle_text{
+                        & > h2{
+                            font-size: 30px;
+                            font-weight: 500;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            margin-bottom: 10px;
+                        }
+
+                        & > p {
+                            font-size: 18px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                        }
+
+                    }
+
+                }
+
+                .cardPro_info{
+                    padding: 39px 10px 24px 30px;
+                    border:  2px rgba(255, 255, 255, 0) solid;
+                    
+                    .cardProInfo_price{
+                        margin-bottom: 50px;
+
+                        & > h2{
+                            display: flex;
+                            align-items: center;
+                            font-size: 30px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            margin-bottom: 10px;
+                            & > span{
+                                text-decoration: line-through;
+                                font-size: 25px;
+                                margin-left: 20px;
+                                color: #808080;
+                            }
+                        }
+
+                        & > p{
+                            font-size: 18px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                        }
+
+                    }
+
+                    .cardInfo_checkMarks{
+
+                        & > h2{
+                            font-size: 20px;
+                            font-weight: 500;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            margin-bottom: 10px;
+                        }
+
+                        .mark_line{
+                            display: flex;
+                            margin-bottom: 5px;
+
+                            & > p{
+                                font-size: 18px;
+                                letter-spacing: 1%;
+                                line-height: 100%;
+                                margin-left: 10px;
+                            }
+
+                        }
+                    }
+
+                    .cardInfo_buttonPro{ 
+                        margin-top: 50px;
+
+                        & > button{
+                            font-size: 20px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            background-color: rgba(89, 112, 255, 1);
+                            color: #fff;
+                            border: 2px #ffffff00 solid;
+                            border-radius: 5px;
+                            width: 94%;
+                            padding: 18px 0px 18px 0px;
+                            cursor: pointer;
+
+                            &:hover{
+                                background-color: #fff;
+                                color: rgba(89, 112, 255, 1);
+                                border: 2px rgba(89, 112, 255, 1) solid;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .card_business{
+                box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                width: 421px;
+
+                .cardBusiness_title{
+                    display: flex;
+                    align-items: center;
+                    padding: 30px 0px 16px 30px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: rgba(0, 0, 0, 1);
+
+                    .cardBusinessTitle_text{
+                        & > h2{
+                            font-size: 30px;
+                            font-weight: 500;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            margin-bottom: 10px;
+                            color: #fff;
+                        }
+
+                        & > p {
+                            font-size: 18px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            color: #fff;
+                            margin-right: 4px;
+                        }
+
+                    }
+
+                }
+
+                .cardBusiness_info{
+                    padding: 39px 10px 24px 30px;
+                    border:  2px rgba(255, 255, 255, 0) solid;
+                    
+                    .cardBusinessInfo_price{
+                        margin-bottom: 78px;
+
+                        & > h2{
+                            display: flex;
+                            align-items: center;
+                            font-size: 30px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            & > span{
+                                text-decoration: line-through;
+                                font-size: 25px;
+                                margin-left: 20px;
+                                color: #808080;
+                            }
+                        }
+
+
+                    }
+
+                    .cardInfo_checkMarks{
+
+                        & > h2{
+                            font-size: 20px;
+                            font-weight: 500;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            margin-bottom: 10px;
+                        }
+
+                        .mark_line{
+                            display: flex;
+                            margin-bottom: 5px;
+
+                            & > p{
+                                font-size: 18px;
+                                letter-spacing: 1%;
+                                line-height: 100%;
+                                margin-left: 10px;
+                            }
+
+                        }
+                    }
+
+                    .cardInfo_buttonBusiness{ 
+                        margin-top: 50px;
+
+                        & > button{
+                            font-size: 20px;
+                            letter-spacing: 1%;
+                            line-height: 100%;
+                            background-color: rgba(89, 112, 255, 1);
+                            color: #fff;
+                            border: 2px #ffffff00 solid;
+                            border-radius: 5px;
+                            width: 94%;
+                            padding: 18px 0px 18px 0px;
+                            cursor: pointer;
+
+                            &:hover{
+                                background-color: #fff;
+                                color: rgba(89, 112, 255, 1);
+                                border: 2px rgba(89, 112, 255, 1) solid;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media(max-width:376px){
+
+    .tariffs{
+        padding: 0px 0px 0px 14px;
+        margin-bottom: 40px;
+
+    
+        .tariffsInner{
+    
+            & > h1{
+                font-size: 28px;
+                margin-bottom: 70px;
+                text-wrap: nowrap;
+            }
+    
+            .tariffs_cards{
+                display: block;
+                width: 335px;
+                height: auto;
+    
+                .card_beginner{
+                    width: 335px;
+                    margin-bottom: 40px;
+                }
+    
+                .card_pro{
+                    width: 335px;
+                    margin-bottom: 40px;
+                }
+    
+                .card_business{
+                    width: 335px;
+                }
+    
+            }
+        }
+    }
+
+}

@@ -1,0 +1,130 @@
+.cards_slider{
+    padding: 0px 60px 0px 60px;
+    margin-bottom: 110px;
+
+    .cardsSliderInner{
+
+        .title{
+            font-size: 45px;
+            letter-spacing: 1%;
+            line-height: 100%;
+            margin-bottom: 70px;
+        }
+
+        .slider{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 70px;
+
+            .cards{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                .card_speed,
+                .card_bd,
+                .card_security{
+                    width: 400px;
+                    height: 225px;
+                    padding: 30px 0px 0px 20px;
+                    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+                    border-radius: 10px;
+
+                    .card_text{
+                        margin-top: 20px;
+                        font-size: 18px;
+                        line-height: 100%;
+                        letter-spacing: 1%;
+                    }
+
+                }
+
+                .soloCard{
+                    display: none;
+                }
+
+            }
+
+            & > img:first-of-type{
+                cursor: pointer;
+            }
+
+            & > img:last-of-type{
+                cursor: pointer;
+            }
+
+        }
+
+        .slider_img > img {
+            display: none;
+        }
+
+        .slider_imgAd{
+            display: none;
+        }
+
+    }
+}
+
+
+@media(max-width: 376px){
+
+    .cards_slider{
+        padding: 0px;
+        margin-bottom: 80px;
+    
+        .cardsSliderInner{
+    
+            .title{
+                padding-left: 14px;
+                font-size: 28px;
+                margin-bottom: 32px;
+            }
+    
+            .slider{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 80px;
+    
+                .cards{
+                    display: flex;
+                    align-items: center;
+                    gap: 0px;
+
+                    .card_speed,
+                    .card_bd,
+                    .card_security{
+                        display: none;
+                    }
+                
+                    .soloCard{
+                        display: flex;
+                        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+                        width: 285px;
+                        height: 185px;
+                        border-radius: 10px;
+
+                        .soloCardInner{
+                            padding: 30px 10px 30px 20px;
+                            width: 284px;
+
+                            & > p {
+                                margin-top: 19px;
+                            }
+                        }
+                    }
+    
+                }
+    
+            }
+
+            .slider_imgAd{
+                display: flex;
+            }
+    
+        }
+    }
+
+}

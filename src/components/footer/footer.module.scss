@@ -1,0 +1,36 @@
+.mainFooter{
+    padding: 25px 45px;
+    background-color: rgba(2, 148, 145, 1);
+
+    .footerInner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer_textInfo{
+            text-align: end;
+
+            & > p{
+                color: #fff;
+            }
+
+            & > a{
+                display: inline-flex;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+        }
+
+    }
+    
+}
+
+
+@media(max-width:376px){
+
+    .mainFooter{
+        padding: 0px 20px 0px 0px;
+    }
+
+}

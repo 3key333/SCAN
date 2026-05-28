@@ -1,0 +1,298 @@
+.mainHeader{
+    padding: 15px 60px;
+
+    .headerInner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header_nav{
+            display: flex;
+            align-items: center;
+
+            gap: 50px;
+
+            & > .nav_link{
+                color: #111;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+        }
+
+        .accountInfo_header_notAuth{
+            display: inline-flex;
+            align-items: center;
+            font-size: 14px;
+
+            .accountInfo_seperator{
+                width: 2px;
+                height: 25px;
+                margin: 0px 20px 0px 20px;
+                background-color: rgba(2, 148, 145, 1);
+            }
+
+            & > span:first-of-type {
+                color: rgba(199, 199, 199, 1);
+                cursor: pointer;
+
+                &:hover{
+                    color: #111;
+                }
+
+            }
+
+            & > a:last-of-type {
+                color: #111;
+                background-color: rgba(124, 227, 225, 1);
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 2px #ffffff00 solid;
+
+                &:hover{
+                    background-color: #fff;
+                    border: 2px solid rgba(124, 227, 225, 1);
+                }
+
+            }
+
+        }
+
+        .accountInfo_header{
+            display: flex;
+            align-items: center;
+        }
+
+        .accountInfo_header_auth{
+            display: flex;
+            align-items: center;
+
+            .accountName{
+                margin-right: 5px;
+
+                & > p{
+                    font-size: 14px;
+                }
+
+                & > button{
+                    width: 100%;
+                    font-size: 10px;
+                    color: rgba(199, 199, 199, 1);
+                    background-color: #ffffff00;
+                    border: 0px;
+                    text-align: end;
+                    cursor: pointer;
+                }
+            }
+
+            .accountInfoCompany{
+                padding: 12px 10px 18px 10px;
+                border-radius: 5px;
+                margin-right: 120px;
+                width: 161px;
+                height: 71px;
+                background-color: rgba(217, 217, 217, 0.418);
+
+                .accountInfoCompanyInner{
+                    display: block;
+                    text-align: center;
+
+                    .infoLoading{
+                        & > img{
+                            animation: rotateLoading 3s ease infinite;
+                        }
+                    }
+
+                    .usedCompany{
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        margin-bottom: 7px;
+
+                        & > p:first-of-type {
+                            font-size: 10px;
+                            line-height: 100%;
+                            letter-spacing: 0;
+                            color: rgb(112, 112, 112);
+                        }
+
+                        & > p:last-of-type{
+                            font-size: 14px;
+                            font-weight: 700;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .limit{
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+
+                        & > p:first-of-type {
+                            font-size: 10px;
+                            line-height: 100%;
+                            letter-spacing: 0;
+                            color: rgb(112, 112, 112);
+                        }
+
+                        & > p:last-of-type{
+                            color: rgba(138, 197, 64, 1);
+                            font-size: 14px;
+                            font-weight: 700;
+                            margin-left: 10px;
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+
+        .burger{
+            display: none;
+        }
+
+    }
+
+}
+
+.openedMenu_header{
+    display: none;
+}
+
+
+@media(max-width:376px){
+
+
+    .mainHeader{
+        padding: 34px 26px 0px 14px;
+    
+        .headerInner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .header_nav{
+                display: none;
+            }
+
+            .burger{
+                display: flex;
+            }
+
+            .accountInfo_header_notAuth{
+                display: none !important;
+            }
+
+            .hideOnMobile{
+                display: none !important; 
+            }
+
+            .accountInfoCompany{
+                padding: 5px 25px 5px 10px !important;
+                margin-right: 10px !important;
+                .accountInfoCompanyInner{
+                    display: block;
+
+                    .usedCompany{
+                        display: block !important;
+                        & > p {
+                            margin: 0px !important;
+                            display: flex;
+                            justify-content: start;
+                        }
+                    }
+
+                    .limit{
+                        display: block !important;
+                        & > p {
+                            margin: 0px !important;
+                            display: flex;
+                            justify-content: start;
+                        }
+                    }
+                }
+            }
+
+        } 
+
+    }    
+
+    .openedMenu_header{
+        display: block;
+        transform: scale(1.02);
+        transition: all 0.2s ease;
+        background-color: rgba(2, 148, 145, 1);
+        
+        .menuLogo{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 25px 0px 14px;
+            margin-bottom: 35px;
+        }
+
+        .menuHeader_navbar{
+            text-align: center;
+            display: block;
+            margin-bottom: 75px;
+
+            & > a, & > span{
+                display: block;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 1%;
+                color: #fff;
+            }
+
+            & > span:first-of-type{
+                margin: 25px 0px 25px 0px;
+            }
+
+            & > a:last-of-type{
+                margin-bottom: 0px;
+            }
+
+        }
+
+        .notAuthAccount{
+            display: block;
+            text-align: center;
+            padding-bottom: 80px;
+
+            & > span{
+                display: block;
+            }
+
+            & > span:first-of-type{
+                color: rgba(255, 255, 255, 1);
+                font-size: 16px;
+            }
+
+            .notAuthAccount_button{
+                margin-top: 20px;
+                
+                & > a{
+                    background-color: rgba(124, 227, 225, 1);
+                    color: #111;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    padding: 15px 110px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@keyframes rotateLoading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

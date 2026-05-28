@@ -1,0 +1,526 @@
+.resultPage{
+    padding: 0px 60px 110px 60px;
+
+    .resultPageInner{
+
+        .resultPage_title{
+            display: flex;
+            justify-content: space-between;
+
+            .text{
+
+                & > h1{
+                    font-size: 40px;
+                    letter-spacing: 5%;
+                    line-height: 100%;
+                    margin-bottom: 30px;
+                    text-transform: uppercase;
+                }
+
+                & > p{
+                    font-size: 20px;
+                    line-height: 100%;
+                    letter-spacing: 1%;
+                }
+
+            }
+            
+        }
+
+        .generalSummary{
+
+            .generalSummary_title{
+                margin-bottom: 25px;
+
+                & > h1{
+                    font-size: 30px;
+                    line-height: 100%;
+                    letter-spacing: 2%;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                }
+
+                & > p{
+                    font-size: 18px;
+                    line-height: 100%;
+                    letter-spacing: 2%;
+                    color: rgba(148, 148, 148, 1);
+                }
+
+            }
+
+            .generalSummary_sliderBlock{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 110px;
+
+                .slider{
+                    width: 100%;
+
+                    .slider_inner{
+                        display: flex;
+
+                        .leftInfo{
+                            padding: 17px 28px;
+                            background-color: rgba(2, 148, 145, 1);
+                            flex-direction: column;
+                            display: flex;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            gap: 26px;
+
+                            & > p{
+                                color: #fff;
+                                font-size: 20px;
+                                line-height: 100%;
+                                letter-spacing: 2%;
+                            }
+
+                        }
+
+                        .rightInfo{
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border: 2px rgba(2, 148, 145, 1) solid;
+                            padding: 17px 0px 17px 0px;
+                            width: 100%;
+
+                            .cards{
+                                display: flex;
+                                height: 100%;
+                                align-items: stretch;
+
+
+                                .cardWrapper{
+                                    flex: 1;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: stretch;
+                                    min-width: 0;
+
+                                    .card_info{
+                                        flex: 1;
+                                       flex-direction: column;
+                                       display: flex; 
+                                       justify-content: center;
+                                       align-items: center;
+                                       text-align: center;
+                                       gap: 23px;
+                                       & > p{
+                                            font-size: 18px;
+                                            letter-spacing: 2%;
+                                            line-height: 100%;
+                                       }
+                                    }
+
+                                    .seperator{
+                                        width: 2px;
+                                        align-self: stretch;
+                                        background-color: rgba(148, 148, 148, 1);
+                                    }
+
+                                }
+
+                                & > .cardWrapper:last-child .seperator{
+                                    display: none;
+                                }
+
+                                .loading{
+                                    text-align: center;
+                                    margin-top: 35px;
+
+                                    & > img{
+                                        width: 30px;
+                                        height: 30px;
+                                        animation: loading 3s ease infinite;
+                                    }
+
+                                }
+
+                            }
+
+                            .card_ad{
+                                display: none;
+                            }
+                        }
+
+                    }
+
+                }
+
+                & > img{
+                    cursor: pointer;
+                }
+
+            }
+
+            .documents{
+
+                .documents_title{
+                    font-size: 30px;
+                    letter-spacing: 2%;
+                    line-height: 100%;
+                    margin-bottom: 60px;
+                }
+
+                .documents_list{
+                    display: flex;
+                    justify-content: center;
+
+                    .documents_line{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 25px;
+
+                        .document_card{
+                            padding: 20px 28px 35px 30px;
+                            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+                            border-radius: 10px;
+                            max-width: 650px;
+
+                            .documentCard_date{
+                                display: flex;
+                                align-items: center;
+                                gap: 14px;
+                                margin-bottom: 25px;
+
+                                & > p, a{
+                                    color: rgba(148, 148, 148, 1);
+                                    font-size: 18px;
+                                    letter-spacing: 3%;
+                                    line-height: 100%;
+                                }
+
+                                & > a{
+                                    border-bottom: 1px rgba(148, 148, 148, 1) solid;
+                                }
+
+                            }
+
+                            .documentCard_title{
+                                min-height: 100px;
+
+                                & > h2{
+                                    font-size: 26px;
+                                    letter-spacing: 2%;
+                                    line-height: 100%;
+                                    text-align: start;
+                                }
+
+                            }
+
+                            .documentCard_techNews{
+                                display: flex;
+                                margin: 14px 0px 14px 0px;
+
+                                & > p {
+                                    padding: 4px 14px;
+                                    background-color: rgba(255, 182, 79, 1);
+                                    border-radius: 5px;
+                                }
+
+                            }
+
+                            .documentCard_img{
+                                display: flex;
+                                text-align: center;
+                                width: 100%;
+                                margin-bottom: 20px;
+
+                                & > img{
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 160px;
+                                    border-radius: 10px;
+                                }
+                            }
+
+                            .documentCard_text{
+                                min-height: 200px;
+
+                                & > p{
+                                    color: rgba(148, 148, 148, 1);
+                                    font-size: 16px;
+                                    letter-spacing: 2%;
+                                    line-height: 100%;
+                                }
+
+                                & > p:last-of-type{
+                                    margin-top: 20px;
+                                }
+
+                            }
+
+                            .documentCard_bottom{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-top: 30px;
+
+                                & > .documentCard_button{
+                                    & > a{
+                                        font-size: 16px;
+                                        letter-spacing: 2%;
+                                        line-height: 100%;
+                                        padding: 14px 30px;
+                                        background-color: rgba(124, 227, 225, 1);
+                                        color: #111;
+                                        border: 2px #ffffff00 solid;
+                                        border-radius: 5px;
+                                        transition: all 0.1s ease;
+                                        cursor: pointer;
+                                        &:hover {
+                                            background-color: #fff;
+                                            border: 2px rgba(124, 227, 225, 1) solid;
+                                        }
+                                    }
+                                }
+
+                                & > p{
+                                    color: rgba(148, 148, 148, 1);
+                                    font-size: 16px;
+                                    letter-spacing: 2%;
+                                    line-height: 100%;
+                                }
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .loadMore_button{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 38px;
+
+                    & > button{
+                        font-size: 22px;
+                        line-height: 100%;
+                        letter-spacing: 4%;
+                        background-color: rgba(89, 112, 255, 1);
+                        color: #fff;
+                        padding: 16px 50px;
+                        border: 2px #ffffff00 solid;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #fff;
+                            color: rgba(89, 112, 255, 1);
+                            border: 2px rgba(89, 112, 255, 1) solid;
+                        }
+                    }
+                }
+
+            }
+
+        } 
+
+    }
+
+}
+
+@keyframes loading {
+
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@media(max-width: 376px){
+
+    .resultPage{
+        padding: 0px 0px 57px 14px;
+    
+        .resultPageInner{
+    
+            .resultPage_title{
+                display: block;
+    
+                .text{
+    
+                    & > h1{
+                        font-size: 28px;
+                        letter-spacing: 1%;
+                        line-height: 100%;
+                        margin-bottom: 20px;
+                    }
+    
+                    & > p{
+                        font-size: 18px;
+                        line-height: 100%;
+                        letter-spacing: 1%;
+                        & > br{
+                            display: none;
+                        }
+                    }
+    
+                }
+
+                & > img{
+                    margin: 20px 0px 50px 0px;
+                    width: 350px;
+                    height: 230px;
+                }
+                
+            }
+    
+            .generalSummary{
+    
+                .generalSummary_title{
+                    margin-bottom: 30px;
+    
+                    & > h1{
+                        font-size: 28px;
+                        letter-spacing: 1%;
+                        margin-bottom: 10px;
+                    }
+    
+                }
+    
+                .generalSummary_sliderBlock{
+                    .slider{
+                        .slider_inner{
+                            display: block;
+    
+                            .leftInfo{
+                                padding: 23px 15px;
+                                flex-direction: row;
+                                border-top-right-radius: 10px;
+                                border-bottom-left-radius: 0px;
+                                gap: 20px;
+    
+                                & > p{
+                                    font-size: 16px;
+                                }
+                                
+                                & > p:first-of-type{
+                                    margin-right: 30px;
+                                }
+                                
+                            }
+    
+                            .rightInfo{
+                                border-top-right-radius: 0px;
+                                border-bottom-left-radius: 10px;
+    
+                                .cards{
+                                    display: none;    
+                                }
+
+                                .card_ad{
+                                    display: block;
+                                    padding: 0px 40px 0px 0px;
+                                    .card_line{
+                                        display: flex;
+                                        justify-content: space-around;
+
+                                        & > p{
+                                            font-size: 16px;
+                                            letter-spacing: 2%;
+                                            line-height: 100%;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+    
+                        }
+    
+                    }
+                }
+    
+                .documents{
+    
+                    .documents_title{
+                        font-size: 28px;
+                        letter-spacing: 1%;
+                        line-height: 100%;
+                        margin-bottom: 34px;
+                    }
+    
+                    .documents_list{
+                        display: block;
+    
+                        .documents_line{
+                            grid-template-columns: 1fr;
+    
+                            .document_card{
+                                display: flex;
+                                flex-direction: column;
+    
+                                .documentCard_date{
+                                    & > p, a{
+                                        font-size: 14px;
+                                    }
+    
+                                }
+    
+                                .documentCard_title{
+                                    & > h2{
+                                        font-size: 20px;
+                                    }
+    
+                                }
+    
+                                .documentCard_techNews{
+                                    & > p {
+                                        font-size: 10px;
+                                    }
+    
+                                }
+    
+                                .documentCard_text{
+                                    min-height: 0;
+    
+                                    & > p{
+                                        font-size: 14px;
+                                        letter-spacing: 1%;
+                                    }
+    
+                                }
+    
+                                .documentCard_bottom{
+                                    margin-top: 20px;
+    
+                                    & > .documentCard_button{
+                                        width: 100%;
+                                        & > a{
+                                            display: inline-flex;
+                                            width: max-content;
+                                            font-size: 14px;
+                                            letter-spacing: 1%;
+                                            padding: 12px 28px;
+                                        }
+                                    }
+    
+                                    & > p{
+                                        text-wrap: nowrap;
+                                        font-size: 14px;
+                                        letter-spacing: 0%;
+                                    }
+                                }
+    
+                            }
+    
+                        }
+    
+                    }
+    
+                }
+    
+            } 
+    
+        }
+    
+    }
+
+}
