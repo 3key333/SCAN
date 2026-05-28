@@ -127,21 +127,6 @@ export const ResultPage = () => {
 
     }
 
-    const getWordsCountFromMarkup = (markup: string): number => {
-
-        if (!markup) return 0
-
-        const text = markup
-          .replace(/<[^>]*>/g, ' ')
-          .replace(/&nbsp;/gi, ' ')
-          .replace(/\s+/g, ' ')
-          .trim()
-
-        if (!text) return 0
-        return text.split(' ').length
-
-    }
-
     const [laizyCountEnd, setLaizyCountEnd] = useState<number>(2)
 
     const handlerClickLoadMore = () => {
@@ -149,7 +134,6 @@ export const ResultPage = () => {
             setLaizyCountEnd(laizyCountEnd+2)
         }
     }
-
 
 
     return(
@@ -276,7 +260,7 @@ export const ResultPage = () => {
                                                 )}
                                             </div>
 
-                                            <p>{getWordsCountFromMarkup(doc.ok.content?.markup ?? '')} Слова</p>
+                                            <p>{doc.ok.attributes?.wordCount ?? 0} Слова</p>
                                             
                                         </div>
 
